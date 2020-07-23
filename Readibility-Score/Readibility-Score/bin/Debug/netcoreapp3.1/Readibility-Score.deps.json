@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Readibility-Score/1.0.0": {
+        "runtime": {
+          "Readibility-Score.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Readibility-Score/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
