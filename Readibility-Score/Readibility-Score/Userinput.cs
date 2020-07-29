@@ -90,8 +90,7 @@ namespace Readibility_Score
                             polysyllableCount++;
                             isPolysyllable = true;
                         }
-
-                        Console.WriteLine("syllable:{0}\n polysyllable:{1}", localSyllableCount,polysyllableCount);
+                        Console.WriteLine($"Local Syllable: {localSyllableCount}");
                         i++;
                     }
 
@@ -108,33 +107,6 @@ namespace Readibility_Score
 
         }
 
-
-        public void RegexSyllablesCount()
-        {
-            char[] charsToTrim = { '.', '!', '?' };
-            char[] vowelLetter = { 'a', 'e', 'i', 'o', 'u', 'y' };
-            bool prevVowel;
-            bool isPolysyllable = false;
-            int localSyllableCount = 0;
-            foreach (string userinput in UserInputs.TrimEnd(charsToTrim).Split(charsToTrim))
-            {
-                string syllabPattern = @"(?i)[aiou][aeiou]*|e[aeiou]*(?!d?\\b)";
-                Regex regexPattern = new Regex(syllabPattern);
-
-                foreach (string word in userinput.Split(' '))
-                {
-                    if (regexPattern.IsMatch(word))
-                    {
-                        localSyllableCount++;
-                    }
-                    Console.WriteLine("syllable:{0}\n polysyllable:{1}", localSyllableCount, polysyllableCount);
-                }
-                if(localSyllableCount>2)
-                {
-                    polysyllableCount++;
-                }
-            } 
-        }
 
 
         // Method for Automated Readability Index
@@ -199,7 +171,26 @@ namespace Readibility_Score
         // Flesch–Kincaid readability tests
         public void FkrTest()
         {
+            double fkrScore = 0;
+            fkrScore = (0.39 *(double) wordCount/ (double) sentenceCount) + ((double)syllableCount / (double)wordCount)*11.8 - 15.53;
+            Console.WriteLine("Score: {0}", fkrScore);
+        }
 
+        public void SmogTest()
+        {
+            double score = 0;
+            score = 1.043 * Math.Sqrt(polysyllableCount * (30 / sentenceCount)) + 3.1291;
+            Console.WriteLine("Score: {0}", score);
+        }
+
+        public void CliTest()
+        {
+            double score = 0;
+            double L = (characterCount / wordCount) * 100;
+            double S = (sentenceCount / wordCount) * 100;
+
+            score = (0.0588 * L) - (0.296 * S) - 15.8;
+            Console.WriteLine("Score: {0}", score);
         }
     }
 }

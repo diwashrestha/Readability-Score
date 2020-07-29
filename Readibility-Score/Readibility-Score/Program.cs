@@ -11,8 +11,12 @@ namespace Readibility_Score
             string userInput = Console.ReadLine();
             Userinput sentence = new Userinput(userInput);
             sentence.ReadScore();
-            sentence.AriTest();
             sentence.syllablesCount();
+            sentence.FkrTest();
+            sentence.AriTest();
+            sentence.SmogTest();
+            sentence.CliTest();
+
             Console.WriteLine("Check more Sentences: Yes[Y]/No[N]?");
             if(Console.ReadLine() == "Y")
             {
