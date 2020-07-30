@@ -57,50 +57,57 @@ namespace Readibility_Score
                     localSyllableCount = 0;
                     int i = 0;
                     int wordLength = word.Length;
-                    foreach (char character in word.ToLower())
+
+                    // if the word is blank space don't add syllable
+                    if(wordLength != 0)
                     {
-                        bool isLastLetter = i == (wordLength - 1);
-                        //Rule3: if last letter in word is 'e' do not count as a vowel.
-                        if (isLastLetter == true && character.Equals('e'))
+                        foreach (char character in word.ToLower())
                         {
+                            bool isLastLetter = i == (wordLength - 1);
 
+                            if (Array.Exists(vowelLetter, element => element == character))
+                            {
+                                //Rule3: if last letter in word is 'e' do not count as a vowel.
+                                if (isLastLetter == true && character.Equals('e'))
+                                {
+
+                                }
+                                // Rule 1: Count the Number of vowel
+                                else if (prevVowel == false)
+                                {
+                                    localSyllableCount++;
+                                    prevVowel = true;
+                                }
+                                // Rule 2: Do Not count double vowels
+                                else if (prevVowel == true)
+                                {
+                                    prevVowel = true;
+                                }
+                            }
+                            else
+                            {
+                                prevVowel = false;
+                            }
+
+                            if (localSyllableCount > 2 && isPolysyllable == false)
+                            {
+                                polysyllableCount++;
+                                isPolysyllable = true;
+                            }
+                            Console.WriteLine($"Local Syllable: {localSyllableCount}");
+                            i++;
                         }
-                        else if (Array.Exists(vowelLetter, element => element == character))
-                        {
 
-                            // Rule 1: Count the Number of vowel
-                            if (prevVowel == false)
-                            {
-                                localSyllableCount++;
-                                prevVowel = true;
-                            }
-                            // Rule 2: Do Not count double vowels
-                            else if(prevVowel == true)
-                            {
-                                prevVowel = true;
-                            }
+                        // Rule 4:
+                        // if a word contains 0 vowel then syllable is 1
+                        if (localSyllableCount == 0)
+                        {
+                            syllableCount += 1;
                         }
                         else
-                        {
-                            prevVowel = false;
-                        }
-
-                        if(localSyllableCount>2 && isPolysyllable == false)
-                        {
-                            polysyllableCount++;
-                            isPolysyllable = true;
-                        }
-                        Console.WriteLine($"Local Syllable: {localSyllableCount}");
-                        i++;
+                            syllableCount += localSyllableCount;
                     }
 
-                    // Rule 4:
-                    // if a word contains 0 vowel then syllable is 1
-                    if(localSyllableCount == 0)
-                    {
-                        localSyllableCount = 1;
-                    }
-                    syllableCount += localSyllableCount;
                 }
             }
             Console.WriteLine($"Syllables: {syllableCount}");
@@ -113,9 +120,17 @@ namespace Readibility_Score
         public void AriTest()
         {
             double score = 0;
-            string ageGroup = "";
-            score = ((4.71 * (characterCount / wordCount)) + (0.5 * (wordCount / sentenceCount) - 21.43));
+            score = ((4.71 * ((double)characterCount / (double)wordCount)) + (0.5 * ((double)wordCount / (double)sentenceCount) - 21.43));
 
+            string ageGroup = AgeGroup(score);
+
+            Console.WriteLine($"The score is: {score:N2} \n This text should be understood by {ageGroup} year olds.");
+        }
+
+        // method for age group
+        private static string AgeGroup(double score)
+        {
+            string ageGroup = "";
             if (score < 2)
             {
                 ageGroup = "5-6";
@@ -165,32 +180,32 @@ namespace Readibility_Score
                 ageGroup = "24+";
             }
 
-            Console.WriteLine($"The score is: {score:N2} \n This text should be understood by {ageGroup} year olds.");
+            return ageGroup;
         }
 
         // Flesch–Kincaid readability tests
         public void FkrTest()
         {
-            double fkrScore = 0;
-            fkrScore = (0.39 *(double) wordCount/ (double) sentenceCount) + ((double)syllableCount / (double)wordCount)*11.8 - 15.53;
-            Console.WriteLine("Score: {0}", fkrScore);
+            double fkrScore = (0.39 * wordCount / sentenceCount) + syllableCount / (double)wordCount * 11.8 - 15.53;
+            Console.WriteLine("Score: {0:N2}", fkrScore);
         }
 
         public void SmogTest()
         {
-            double score = 0;
-            score = 1.043 * Math.Sqrt(polysyllableCount * (30 / sentenceCount)) + 3.1291;
-            Console.WriteLine("Score: {0}", score);
+            double score = 1.043 * Math.Sqrt(polysyllableCount * (30 / (double)sentenceCount)) + 3.1291;
+            Console.WriteLine("Score: {0:N2}", score);
         }
 
         public void CliTest()
         {
-            double score = 0;
-            double L = (characterCount / wordCount) * 100;
-            double S = (sentenceCount / wordCount) * 100;
+            double L = ((double)characterCount / (double)wordCount) * 100;
+            double S = ((double)sentenceCount / (double)wordCount) * 100;
 
-            score = (0.0588 * L) - (0.296 * S) - 15.8;
-            Console.WriteLine("Score: {0}", score);
+            double score = 0.0588 * L - 0.296 * S - 15.8;
+            Console.WriteLine("Score: {0:N2}", score);
         }
+
+
+
     }
 }
