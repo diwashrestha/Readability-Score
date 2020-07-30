@@ -16,6 +16,7 @@ namespace Readibility_Score
             sentence.AriTest();
             sentence.SmogTest();
             sentence.CliTest();
+            sentence.AvgTest();
 
             Console.WriteLine("Check more Sentences: Yes[Y]/No[N]?");
             if(Console.ReadLine() == "Y")

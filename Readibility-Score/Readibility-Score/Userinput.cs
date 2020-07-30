@@ -14,7 +14,14 @@ namespace Readibility_Score
         private int sentenceCount = 0;
         private int syllableCount = 0;
         private int polysyllableCount = 0;
-
+        private float ariScore = 0;
+        private float fkrScore = 0;
+        private float smgScore = 0;
+        private float cliScore = 0;
+        private int ariAge = 0;
+        private int fkrAge = 0;
+        private int smgAge = 0;
+        private int cliAge = 0;
         // Constructor Declaration
         public Userinput(String userInput )
         {
@@ -59,7 +66,7 @@ namespace Readibility_Score
                     int wordLength = word.Length;
 
                     // if the word is blank space don't add syllable
-                    if(wordLength != 0)
+                    if (wordLength != 0)
                     {
                         foreach (char character in word.ToLower())
                         {
@@ -78,7 +85,7 @@ namespace Readibility_Score
                                     localSyllableCount++;
                                     prevVowel = true;
                                 }
-                                // Rule 2: Do Not count double vowels
+                                // Rule 2: Do Not count float vowels
                                 else if (prevVowel == true)
                                 {
                                     prevVowel = true;
@@ -94,7 +101,6 @@ namespace Readibility_Score
                                 polysyllableCount++;
                                 isPolysyllable = true;
                             }
-                            Console.WriteLine($"Local Syllable: {localSyllableCount}");
                             i++;
                         }
 
@@ -110,7 +116,7 @@ namespace Readibility_Score
 
                 }
             }
-            Console.WriteLine($"Syllables: {syllableCount}");
+            Console.WriteLine($"Syllables: {syllableCount} \n Polysyllables:{polysyllableCount}\n");
 
         }
 
@@ -119,93 +125,173 @@ namespace Readibility_Score
         // Method for Automated Readability Index
         public void AriTest()
         {
-            double score = 0;
-            score = ((4.71 * ((double)characterCount / (double)wordCount)) + (0.5 * ((double)wordCount / (double)sentenceCount) - 21.43));
+            ariScore = (float)(4.71 * (characterCount / wordCount) + (0.5 * (wordCount
+                                                                            / sentenceCount) - 21.43));
 
-            string ageGroup = AgeGroup(score);
+            ariAge = AgeGroupChecker(ariScore);
 
-            Console.WriteLine($"The score is: {score:N2} \n This text should be understood by {ageGroup} year olds.");
+            Console.WriteLine($"Automated Readability Index: {ariScore:N2} . This text should be understood by {ariAge} year olds.");
         }
 
-        // method for age group
-        private static string AgeGroup(double score)
-        {
-            string ageGroup = "";
-            if (score < 2)
-            {
-                ageGroup = "5-6";
-            }
-            else if (score < 3)
-            {
-                ageGroup = "6-7";
-            }
-            else if (score < 4)
-            {
-                ageGroup = "7-9";
-            }
-            else if (score < 5)
-            {
-                ageGroup = "9-10";
-            }
-            else if (score < 6)
-            {
-                ageGroup = "10-11";
-            }
-            else if (score < 7)
-            {
-                ageGroup = "11-12";
-            }
-            else if (score < 8)
-            {
-                ageGroup = "12-13";
-            }
-            else if (score < 9)
-            {
-                ageGroup = "13-14";
-            }
-            else if (score < 10)
-            {
-                ageGroup = "15-16";
-            }
-            else if (score < 11)
-            {
-                ageGroup = "17-18";
-            }
-            else if (score < 12)
-            {
-                ageGroup = "18-24";
-            }
-            else if (score < 13)
-            {
-                ageGroup = "24+";
-            }
-
-            return ageGroup;
-        }
 
         // Flesch–Kincaid readability tests
         public void FkrTest()
         {
-            double fkrScore = (0.39 * wordCount / sentenceCount) + syllableCount / (double)wordCount * 11.8 - 15.53;
-            Console.WriteLine("Score: {0:N2}", fkrScore);
+            fkrScore = (float)((0.39 * (float)wordCount / (float)sentenceCount) + (float)syllableCount / (float)wordCount * 11.8 - 15.53);
+            fkrAge = AgeGroupChecker(fkrScore);
+            Console.WriteLine($"Flesch–Kincaid readability tests: {fkrScore:N2} . This text should be understood by {fkrAge} year olds.");
+
         }
 
         public void SmogTest()
         {
-            double score = 1.043 * Math.Sqrt(polysyllableCount * (30 / (double)sentenceCount)) + 3.1291;
-            Console.WriteLine("Score: {0:N2}", score);
+            smgScore = (float)((1.043 * Math.Sqrt(polysyllableCount * (30 / (float)sentenceCount))) + 3.1291);
+            smgAge = AgeGroupChecker(smgScore);
+            Console.WriteLine($"Simple Measure of Gobbledygook: {smgScore:N2} . This text should be understood by {smgAge} year olds.");
+
         }
 
         public void CliTest()
         {
-            double L = ((double)characterCount / (double)wordCount) * 100;
-            double S = ((double)sentenceCount / (double)wordCount) * 100;
+            float L = ((float)characterCount / (float)wordCount) * 100;
+            float S = ((float)sentenceCount / (float)wordCount) * 100;
 
-            double score = 0.0588 * L - 0.296 * S - 15.8;
-            Console.WriteLine("Score: {0:N2}", score);
+            cliScore = (float)((0.0588 * L) - 0.296 * S - 15.8);
+            cliAge = AgeGroupChecker(cliScore);
+            Console.WriteLine($"Coleman–Liau index: {cliScore:N2} . This text should be understood by {cliAge} year olds.");
+
+        }
+
+        public void AvgTest()
+        {
+            float avgAge = (float)(((float)ariAge + (float)fkrAge + (float)smgAge + (float)cliAge) / 4);
+            float avgScore = (float)(ariScore + fkrScore + smgScore + cliScore) / 4;
+            string gradeLevel =  GradeLevelChecker(avgScore);
+            Console.WriteLine("{0}", avgAge);
+            Console.WriteLine("This text has average grade level of {0} and should be understood by: {1:N2} year olds.", gradeLevel, avgAge);
         }
 
 
+        // method for age group
+        private static int AgeGroupChecker(float score)
+        {
+            int ageGroup = 0;
+            if (score < 2)
+            {
+                ageGroup = 6;
+            }
+            else if (score < 3)
+            {
+                ageGroup = 7;
+            }
+            else if (score < 4)
+            {
+                ageGroup = 9;
+            }
+            else if (score < 5)
+            {
+                ageGroup = 10;
+            }
+            else if (score < 6)
+            {
+                ageGroup = 11;
+            }
+            else if (score < 7)
+            {
+                ageGroup = 12;
+            }
+            else if (score < 8)
+            {
+                ageGroup = 13;
+            }
+            else if (score < 9)
+            {
+                ageGroup = 14;
+            }
+            else if (score < 10)
+            {
+                ageGroup = 15;
+            }
+            else if (score < 11)
+            {
+                ageGroup = 16;
+            }
+            else if (score < 12)
+            {
+                ageGroup = 17;
+            }
+            else if (score < 13)
+            {
+                ageGroup = 18;
+            }
+            else if (score < 14)
+            {
+                ageGroup = 24;
+            }
+            return ageGroup;
+        }
+
+        private static string GradeLevelChecker(float score)
+        {
+            string gradeLevel = "";
+            if (score < 2)
+            {
+                gradeLevel = "Kindergarten";
+            }
+            else if (score < 3)
+            {
+                gradeLevel = "First/Second";
+            }
+            else if (score < 4)
+            {
+                gradeLevel = "Third";
+            }
+            else if (score < 5)
+            {
+                gradeLevel = "Fourth";
+            }
+            else if (score < 6)
+            {
+                gradeLevel = "Fifth";
+            }
+            else if (score < 7)
+            {
+                gradeLevel = "Sixth";
+            }
+            else if (score < 8)
+            {
+                gradeLevel = "Seventh";
+            }
+            else if (score < 9)
+            {
+                gradeLevel = "Eighth";
+            }
+            else if (score < 10)
+            {
+                gradeLevel = "Ninth";
+            }
+            else if (score < 11)
+            {
+                gradeLevel = "Tenth";
+            }
+            else if (score < 12)
+            {
+                gradeLevel = "Eleventh";
+            }
+            else if (score < 13)
+            {
+                gradeLevel = "Twelfth";
+            }
+            else if (score < 14)
+            {
+                gradeLevel = "College";
+            }
+            else if(score > 14)
+            {
+                gradeLevel = "Professor";
+            }
+            return gradeLevel;
+        }
 
     }
 }
