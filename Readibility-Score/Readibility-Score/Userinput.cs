@@ -125,8 +125,8 @@ namespace Readibility_Score
         // Method for Automated Readability Index
         public void AriTest()
         {
-            ariScore = (float)(4.71 * (characterCount / wordCount) + (0.5 * (wordCount
-                                                                            / sentenceCount) - 21.43));
+            ariScore = (float)(4.71 * ((float)characterCount / (float)wordCount) + (0.5 * ((float)wordCount
+                                                                            / (float)sentenceCount) - 21.43));
 
             ariAge = AgeGroupChecker(ariScore);
 
@@ -164,7 +164,7 @@ namespace Readibility_Score
 
         public void AvgTest()
         {
-            float avgAge = (float)(((float)ariAge + (float)fkrAge + (float)smgAge + (float)cliAge) / 4);
+            double avgAge = (double)((double)ariAge + (double)fkrAge + (double)smgAge + (double)cliAge) / 4;
             float avgScore = (float)(ariScore + fkrScore + smgScore + cliScore) / 4;
             string gradeLevel =  GradeLevelChecker(avgScore);
             Console.WriteLine("{0}", avgAge);

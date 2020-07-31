@@ -6,7 +6,6 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readibility-Score\bin\Debug\netc
 F:\PROJECTS\Readability-Score\Readibility-Score\Readibility-Score\bin\Debug\netcoreapp3.1\Readibility-Score.pdb
 F:\PROJECTS\Readability-Score\Readibility-Score\Readibility-Score\obj\Debug\netcoreapp3.1\Readibility-Score.AssemblyInfoInputs.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readibility-Score\obj\Debug\netcoreapp3.1\Readibility-Score.AssemblyInfo.cs
-F:\PROJECTS\Readability-Score\Readibility-Score\Readibility-Score\obj\Debug\netcoreapp3.1\Readibility-Score.csproj.CoreCompileInputs.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readibility-Score\obj\Debug\netcoreapp3.1\Readibility-Score.dll
 F:\PROJECTS\Readability-Score\Readibility-Score\Readibility-Score\obj\Debug\netcoreapp3.1\Readibility-Score.pdb
 F:\PROJECTS\Readability-Score\Readibility-Score\Readibility-Score\obj\Debug\netcoreapp3.1\Readibility-Score.genruntimeconfig.cache
