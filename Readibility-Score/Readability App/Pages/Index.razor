@@ -1,7 +1,5 @@
 ﻿@page "/"
 
-
-
 <div class="container">
     <div class="row">
         <div class="col-sm">
@@ -12,16 +10,20 @@
                 <div class="card-body">
                     <form>
                         <div class="form-group">
-                            <textarea class="form-control" id="userInput" rows="4"></textarea>
+                            <textarea style="resize:none" class="form-control" id="userInput" rows="8" placeholder="Enter your text here..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Check Readability</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             Result
         </div>
     </div>
 </div>
+
+@code{
+
+}
 

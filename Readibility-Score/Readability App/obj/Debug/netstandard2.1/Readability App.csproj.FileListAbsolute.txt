@@ -5,7 +5,6 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\service-worker-assets.js
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\service-worker.js
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Readability App.dll
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Net.Http.Json.dll
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Buffers.dll
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\mscorlib.dll
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Threading.Tasks.Extensions.dll
@@ -64,7 +63,6 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\blazor.boot.json
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\service-worker-assets.js.gz
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Readability App.dll.gz
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Net.Http.Json.dll.gz
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Buffers.dll.gz
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\mscorlib.dll.gz
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Threading.Tasks.Extensions.dll.gz
@@ -159,8 +157,6 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.csproj.CoreCompileInputs.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.RazorComponent.input.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\App.razor.g.cs
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Counter.razor.g.cs
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\FetchData.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Index.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
@@ -171,8 +167,6 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.TagHelpers.output.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.RazorCoreGenerate.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\App.razor.g.cs
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\Counter.razor.g.cs
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\FetchData.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\Index.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Shared\MainLayout.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Shared\NavMenu.razor.g.cs
@@ -181,7 +175,6 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.RazorTargetAssemblyInfo.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.csproj.CopyComplete
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\blazor\unlinked.output
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\99dseBOagY3mzu5Y8Eqm8gRI_o8QbbCp7R2Ew9bQ_5E=.hash
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=.hash
@@ -239,7 +232,6 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\blazor\blazor.boot.json
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\service-worker-assets.js.gz
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Readability App.dll.gz
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.gz
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.gz
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\_bin\mscorlib.dll.gz
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Threading.Tasks.Extensions.dll.gz
@@ -298,7 +290,6 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\blazor.boot.json.gz
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\service-worker-assets.js.br
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Readability App.dll.br
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.br
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.br
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\_bin\mscorlib.dll.br
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Threading.Tasks.Extensions.dll.br
@@ -361,8 +352,12 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.pdb
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\blazor\serviceworkers\wwwroot\service-worker.js
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\blazor\service-worker-assets.js
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\ZDyBpUBAwW1G7UpMombhTz2r2kPBTGsj7p-U2Vj2WCc=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\0u6Cp2CtRE5nbJrnseIK99f2kDqJnJ-NwS0Ybwzid_Y=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\nZyndAjAOR12Un3bXhU6y39pS0pPUONIe0Bogr4FVPQ=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\GKm3jXqMkCcU4vYES5w5kyAg0J71xNmrUscERnKLKT8=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\zmmRtczwUGXYfGzAWxL0Elu-1WofBLmqYoZi28QfyLA=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\About.razor.g.cs
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\FileTest.razor.g.cs
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\About.razor.g.cs
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\FileTest.razor.g.cs
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\VNs-X5frhH-w1iQA9yFvj1nG24VnduvPl1ReUCovbvI=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\fu7rz2baJDRtmc49Z1mXMgriN1LSv7KNpCIBxATYu0U=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\oFuVX5fM8pKFamAUDojpJs202mif1kpOdOuM1oZJIJc=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\8Z71acbDY73GVRqY61U1D8bcdOfU3f9O8dpwhHvmVxs=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\_UEpFyDItSxlUuh7qoZh5Ue2QnVAILM4Niwg-geMdAg=.hash

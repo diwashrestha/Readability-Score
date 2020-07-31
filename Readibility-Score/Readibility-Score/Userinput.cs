@@ -8,7 +8,7 @@ namespace Readibility_Score
 {
     public class Userinput
     {
-        public string UserInputs { get; }
+        public string UserInputs { get; set; }
         private int characterCount = 0;
         private int wordCount = 0;
         private int sentenceCount = 0;
