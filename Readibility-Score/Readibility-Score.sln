@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Readibility-Score", "Readibility-Score\Readibility-Score.csproj", "{EBEA7DB6-26E0-446C-8A85-2101D45E892E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readability App", "Readability App\Readability App.csproj", "{5BFCF2FF-1D36-4378-A7D1-E300C2D1884D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Readability App", "Readability App\Readability App.csproj", "{5BFCF2FF-1D36-4378-A7D1-E300C2D1884D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

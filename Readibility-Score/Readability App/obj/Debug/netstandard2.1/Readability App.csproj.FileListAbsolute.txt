@@ -356,8 +356,10 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\FileTest.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\About.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\FileTest.razor.g.cs
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\VNs-X5frhH-w1iQA9yFvj1nG24VnduvPl1ReUCovbvI=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\fu7rz2baJDRtmc49Z1mXMgriN1LSv7KNpCIBxATYu0U=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\oFuVX5fM8pKFamAUDojpJs202mif1kpOdOuM1oZJIJc=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\8Z71acbDY73GVRqY61U1D8bcdOfU3f9O8dpwhHvmVxs=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\_UEpFyDItSxlUuh7qoZh5Ue2QnVAILM4Niwg-geMdAg=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Binding_example.razor.g.cs
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\Binding_example.razor.g.cs
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\0QMKCQNX5C8ns6GUMWhFiqG-T10zDf2WbN2ShspyxJE=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\h_cXQgljsLKUh5jquKZFd9ZQsfTArmu-7ruf47cyVuc=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\BQWEKnt3PORDpYbX2YcXFYaCokalT8u1JSiBqeGa-GE=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\87dcZQrgGGpWo9OujO_vDslikzpv5j6SlkKmNBMgYSM=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\5RC1zbEEQI5gfvolFr7aeI-1CuJRvbRhCDZpdxbquS0=.hash

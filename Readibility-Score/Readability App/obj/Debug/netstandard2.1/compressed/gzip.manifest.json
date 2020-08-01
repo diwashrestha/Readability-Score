@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\fu7rz2baJDRtmc49Z1mXMgriN1LSv7KNpCIBxATYu0U=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\h_cXQgljsLKUh5jquKZFd9ZQsfTArmu-7ruf47cyVuc=.hash",
       "Source": "F:\\PROJECTS\\Readability-Score\\Readibility-Score\\Readability App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Readability App.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Readability App.dll.gz"
     },
@@ -256,7 +256,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\oFuVX5fM8pKFamAUDojpJs202mif1kpOdOuM1oZJIJc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\BQWEKnt3PORDpYbX2YcXFYaCokalT8u1JSiBqeGa-GE=.hash",
       "Source": "F:\\PROJECTS\\Readability-Score\\Readibility-Score\\Readability App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Readability App.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Readability App.pdb.gz"
     },
@@ -281,12 +281,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\8Z71acbDY73GVRqY61U1D8bcdOfU3f9O8dpwhHvmVxs=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\87dcZQrgGGpWo9OujO_vDslikzpv5j6SlkKmNBMgYSM=.hash",
       "Source": "F:\\PROJECTS\\Readability-Score\\Readibility-Score\\Readability App\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\_UEpFyDItSxlUuh7qoZh5Ue2QnVAILM4Niwg-geMdAg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\5RC1zbEEQI5gfvolFr7aeI-1CuJRvbRhCDZpdxbquS0=.hash",
       "Source": "F:\\PROJECTS\\Readability-Score\\Readibility-Score\\Readability App\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.gz"
     }
