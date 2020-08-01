@@ -1,5 +1,5 @@
-﻿@page "/binding-example"
-@inherits Binding_example
+﻿@page "/binding_example"
+
 
 <p>
     <input type="text" @bind="paragraphStyle" />
@@ -13,14 +13,3 @@
  @paraLength
 </p>
 <button @onclick="ParaLength">Add todo</button>
-
-@code{
-    private string paragraphStyle = "color:red";
-    private string para = "1";
-    private int paraLength;
-
-    private void ParaLength()
-    {
-        paraLength = paragraphStyle.Length;
-    }
-}

@@ -151,13 +151,11 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\System.Text.Encodings.Web.dll
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\System.Text.Json.dll
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\bin\Debug\netstandard2.1\System.Threading.Tasks.Extensions.dll
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.csprojAssemblyReference.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.AssemblyInfoInputs.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.AssemblyInfo.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.csproj.CoreCompileInputs.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.RazorComponent.input.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\App.razor.g.cs
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Index.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
@@ -167,7 +165,6 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.TagHelpers.output.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.RazorCoreGenerate.cache
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\App.razor.g.cs
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\Index.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Shared\MainLayout.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Shared\NavMenu.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
@@ -358,8 +355,11 @@ F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netsta
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\FileTest.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Binding_example.razor.g.cs
 F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\Binding_example.razor.g.cs
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\0QMKCQNX5C8ns6GUMWhFiqG-T10zDf2WbN2ShspyxJE=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\h_cXQgljsLKUh5jquKZFd9ZQsfTArmu-7ruf47cyVuc=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\BQWEKnt3PORDpYbX2YcXFYaCokalT8u1JSiBqeGa-GE=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\87dcZQrgGGpWo9OujO_vDslikzpv5j6SlkKmNBMgYSM=.hash
-F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\5RC1zbEEQI5gfvolFr7aeI-1CuJRvbRhCDZpdxbquS0=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\TextTest.razor.g.cs
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Razor\Pages\TextTest.razor.g.cs
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\Readability App.csprojAssemblyReference.cache
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\QUXpq5c6Olk0eqLGq_7HRrqmbi9av9qS7Z37GPjSzKQ=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\REA9h1YNo7L6kA_3zV01EFzUlV_PONEN_WWOETEhISM=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\ugW6n2cj_TMEwCLxtdHoRdx7xBV_LX9KqVPdK9MFiWQ=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\CXzwudQFICiFkxJET3dBq5wSjJffWm6EIynV-YuZAcg=.hash
+F:\PROJECTS\Readability-Score\Readibility-Score\Readability App\obj\Debug\netstandard2.1\integrity\eLp6JndVUVye3d2PPk9Gs0Zim9ppKEd-6yvP1urqjfw=.hash

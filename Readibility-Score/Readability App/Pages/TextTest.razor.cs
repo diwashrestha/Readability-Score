@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Readibility_Score
+namespace Readability_App.Pages
 {
-    public class Userinput
-    {
-        public string UserInputs { get; set; }
+    public partial class TextTest
+{
+        private string userInput = "";
         private int characterCount = 0;
         private int wordCount = 0;
         private int sentenceCount = 0;
@@ -22,25 +20,40 @@ namespace Readibility_Score
         private int fkrAge = 0;
         private int smgAge = 0;
         private int cliAge = 0;
-        // Constructor Declaration
-        public Userinput(String userInput )
+        private double avgAge = 0;
+        private float avgScore = 0;
+        private string avgGradeLevel = "";
+
+
+
+        public void ReadableCheck()
         {
-            UserInputs = userInput;
+            ReadScore();
+            SyllablesCount();
+            AvgTest();
+            AriTest();
+            FkrTest();
+            SmogTest();
+            CliTest();
         }
 
-
-        // Method for counting the word, character, sentence, syllables, polysyllables
         public void ReadScore()
         {
-            char[] charsToTrim = { '.', '!' };
+            characterCount = 0;
+            wordCount = 0;
+            sentenceCount = 0;
+
+            char[] charsToTrim = { '.', '!', '?' };
+            userInput = userInput.TrimStart(' ');
+            userInput = Regex.Replace(userInput, @"\s+", " ");
 
             // Separate each sentence in the given string
-            foreach (string userinput in UserInputs.TrimEnd(charsToTrim).Split(charsToTrim))
+            foreach (string userinput in userInput.TrimEnd(charsToTrim).Split(charsToTrim))
             {
                 wordCount += userinput.Trim().Split(' ').Count();
                 sentenceCount++;
             }
-            foreach(string word in UserInputs.Split(' '))
+            foreach (string word in userInput.Split(' '))
             {
                 characterCount += word.Length;
             }
@@ -50,17 +63,18 @@ namespace Readibility_Score
                 wordCount = 0;
                 sentenceCount = 0;
             }
-            Console.WriteLine( $"Words: {wordCount}\n Sentences: {sentenceCount} \n Characters: {characterCount} \n ");
         }
 
-        public void syllablesCount()
+
+
+        public void SyllablesCount()
         {
             char[] charsToTrim = { '.', '!', '?' };
             char[] vowelLetter = { 'a', 'e', 'i', 'o', 'u', 'y' };
             bool prevVowel;
             bool isPolysyllable = false;
             int localSyllableCount = 0;
-            foreach (string userinput in UserInputs.TrimEnd(charsToTrim).Split(charsToTrim))
+            foreach (string userinput in userInput.TrimEnd(charsToTrim).Split(charsToTrim))
             {
                 foreach (string word in userinput.Split(' '))
                 {
@@ -121,8 +135,6 @@ namespace Readibility_Score
 
                 }
             }
-            Console.WriteLine($"Syllables: {syllableCount} \n Polysyllables:{polysyllableCount}\n");
-
         }
 
 
@@ -134,8 +146,6 @@ namespace Readibility_Score
                                                                             / (float)sentenceCount) - 21.43));
 
             ariAge = AgeGroupChecker(ariScore);
-
-            Console.WriteLine($"Automated Readability Index: {ariScore:N2} . This text should be understood by {ariAge} year olds.");
         }
 
 
@@ -144,16 +154,12 @@ namespace Readibility_Score
         {
             fkrScore = (float)((0.39 * (float)wordCount / (float)sentenceCount) + (float)syllableCount / (float)wordCount * 11.8 - 15.53);
             fkrAge = AgeGroupChecker(fkrScore);
-            Console.WriteLine($"Flesch–Kincaid readability tests: {fkrScore:N2} . This text should be understood by {fkrAge} year olds.");
-
         }
 
         public void SmogTest()
         {
             smgScore = (float)((1.043 * Math.Sqrt(polysyllableCount * (30 / (float)sentenceCount))) + 3.1291);
             smgAge = AgeGroupChecker(smgScore);
-            Console.WriteLine($"Simple Measure of Gobbledygook: {smgScore:N2} . This text should be understood by {smgAge} year olds.");
-
         }
 
         public void CliTest()
@@ -163,17 +169,18 @@ namespace Readibility_Score
 
             cliScore = (float)((0.0588 * L) - 0.296 * S - 15.8);
             cliAge = AgeGroupChecker(cliScore);
-            Console.WriteLine($"Coleman–Liau index: {cliScore:N2} . This text should be understood by {cliAge} year olds.");
 
         }
 
         public void AvgTest()
         {
-            double avgAge = (double)((double)ariAge + (double)fkrAge + (double)smgAge + (double)cliAge) / 4;
-            float avgScore = (float)(ariScore + fkrScore + smgScore + cliScore) / 4;
-            string gradeLevel =  GradeLevelChecker(avgScore);
-            Console.WriteLine("{0}", avgAge);
-            Console.WriteLine("This text has average grade level of {0} and should be understood by: {1:N2} year olds.", gradeLevel, avgAge);
+            AriTest();
+            FkrTest();
+            SmogTest();
+            CliTest();
+            avgAge = (double)((double)ariAge + (double)fkrAge + (double)smgAge + (double)cliAge) / 4;
+            avgScore = (float)(ariScore + fkrScore + smgScore + cliScore) / 4;
+            avgGradeLevel = GradeLevelChecker(avgScore);
         }
 
 
@@ -291,12 +298,11 @@ namespace Readibility_Score
             {
                 gradeLevel = "College";
             }
-            else if(score > 14)
+            else if (score > 14)
             {
                 gradeLevel = "Professor";
             }
             return gradeLevel;
         }
-
     }
 }
